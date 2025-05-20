@@ -239,7 +239,7 @@ export default function Landing() {
                         textTransform: "none",
                     }}
                 >
-                    and mostly people treat their story as reality.
+                    and mostly people treat their story as reality. 
                 </Typography>
                 <Typography
                     variant="body1"
@@ -252,7 +252,7 @@ export default function Landing() {
                         textTransform: "none",
                     }}
                 >
-                    Welcome to Algogram.
+                     Welcome to Algogram.
                 </Typography>
                 <Typography
                     variant="body1"
@@ -265,7 +265,7 @@ export default function Landing() {
                         textTransform: "none",
                     }}
                 >
-                    Welcome to the next generation of social media. Where algorithm will choose what you post and what you see.
+                    Welcome to the next generation of social media where algorithm will make all the choices for you, from what to post to what to see.
                 </Typography>
             </Box>
 
