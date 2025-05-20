@@ -111,6 +111,44 @@ export default function Backstage() {
                         }}
                     >
                         {/* 图片 1:1 比例+主题色半透明遮罩 */}
+
+                        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', mb: 1 }}>
+                            <Avatar
+                                sx={{
+                                    width: 42, height: 42,
+                                    mb: 1, boxShadow: `0 0 8px ${color}AA`, border: `2px solid ${color}`,
+                                    bgcolor: color, color: '#222',
+                                    fontWeight: 700,
+                                }}
+                                src={user ? `https://api.dicebear.com/7.x/identicon/svg?seed=${user.uid || user.username}` : ''}
+                            >
+                                {user?.username?.[0]?.toUpperCase() || type[0]}
+                            </Avatar>
+                            <Typography
+                                variant="subtitle2"
+                                sx={{
+                                    fontWeight: 900,
+                                    fontSize: 16,
+                                    color: color,
+                                    letterSpacing: 1,
+                                    textShadow: `0 0 7px ${color}55`,
+                                    mb: 0.2,
+                                }}
+                            >
+                                In <b>{user?.username || 'Anonymous'}</b>'s View
+                            </Typography>
+                            <Typography
+                                variant="caption"
+                                sx={{
+                                    color: color,
+                                    fontWeight: 600,
+                                    opacity: 0.68,
+                                    letterSpacing: 1.1,
+                                }}
+                            >
+                                <b>{type}</b>
+                            </Typography>
+                        </Box>
                         <Box
                             sx={{
                                 width: '100%',
@@ -158,44 +196,6 @@ export default function Backstage() {
                                     Loading...
                                 </Typography>
                             )}
-                        </Box>
-                        {/* 用户名/类型 */}
-                        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', mb: 1 }}>
-                            <Avatar
-                                sx={{
-                                    width: 42, height: 42,
-                                    mb: 1, boxShadow: `0 0 8px ${color}AA`, border: `2px solid ${color}`,
-                                    bgcolor: color, color: '#222',
-                                    fontWeight: 700,
-                                }}
-                                src={user ? `https://api.dicebear.com/7.x/identicon/svg?seed=${user.uid || user.username}` : ''}
-                            >
-                                {user?.username?.[0]?.toUpperCase() || type[0]}
-                            </Avatar>
-                            <Typography
-                                variant="subtitle2"
-                                sx={{
-                                    fontWeight: 900,
-                                    fontSize: 16,
-                                    color: color,
-                                    letterSpacing: 1,
-                                    textShadow: `0 0 7px ${color}55`,
-                                    mb: 0.2,
-                                }}
-                            >
-                                {user?.username || 'Anonymous'}
-                            </Typography>
-                            <Typography
-                                variant="caption"
-                                sx={{
-                                    color: color,
-                                    fontWeight: 600,
-                                    opacity: 0.68,
-                                    letterSpacing: 1.1,
-                                }}
-                            >
-                                {type}
-                            </Typography>
                         </Box>
                         {/* caption - 强烈主视觉 */}
                         <Box sx={{

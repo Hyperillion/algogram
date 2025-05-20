@@ -133,13 +133,13 @@ export default function Upload() {
                 </Box>
             )}
 
-            {/* {userType && caption && (
+            {userType && caption && (
                 <Typography variant="body1" sx={{ fontStyle: 'italic', mb: 1 }}>
                     “{caption}”
                 </Typography>
             )}
 
-            {prompt && (
+            {/* {prompt && (
                 <Typography
                     variant="caption"
                     sx={{
@@ -165,7 +165,7 @@ export default function Upload() {
                         textAlign: 'left'
                     }}
                 >
-                    {reason}
+                    Words from Algorithm: {reason}
                 </Typography>
             )}
 
