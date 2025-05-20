@@ -1,0 +1,6 @@
+/* fonts.css in src/styles/ */
+@font-face {
+    font-family: 'LilyScriptOne';
+    src: url('../assets/font/LilyScriptOne-Regular.woff2') format('woff2');
+  }
+  
