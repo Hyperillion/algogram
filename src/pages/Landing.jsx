@@ -126,7 +126,7 @@ export default function Landing() {
         setTimeout(() => {
             setLoading(false);
             navigate("/login");
-        }, 18500);
+        }, 3500);
     };
 
     const pulseStyle = {
@@ -241,6 +241,19 @@ export default function Landing() {
                 >
                     and mostly people treat their story as reality.
                 </Typography>
+                <Typography
+                    variant="body1"
+                    sx={{
+                        color: "#fff",
+                        mb: 3,
+                        fontFamily: "monospace",
+                        fontSize: 18,
+                        letterSpacing: "0.04em",
+                        textTransform: "none",
+                    }}
+                >
+                    Welcome to the world ruled by algorithm
+                </Typography>
             </Box>
 
             <Box sx={{ textAlign: "center", position: "relative", zIndex: 2, mt: 2, pb: 4 }}>
@@ -257,7 +270,7 @@ export default function Landing() {
                     }}
                     onClick={handleNavigate}
                 >
-                    see your story of reality
+                    see your story
                 </Button>
 
             </Box>

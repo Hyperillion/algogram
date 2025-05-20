@@ -79,6 +79,28 @@ export default function Backstage() {
                 zIndex: 100,
             }}
         >
+            <Typography
+                variant="h4"
+                sx={{
+                    fontWeight: 900,
+                    // color: '#fff',
+                    textAlign: 'center',
+                    textShadow: '0 0 10px #000',
+                    mb: 2,
+                    position: 'absolute',
+                    top: '10%',
+                    left: '50%',
+                    transform: 'translate(-50%, -50%)',
+                    zIndex: 200,
+                    fontFamily: 'monospace',
+                    letterSpacing: 1.5,
+                    width: '100%',
+                    mt: 2,
+                }}
+            >
+                Same Post, Different Preference, Difference View
+            </Typography>
+
             {/* 横向五栏，每栏一张用户视角卡片 */}
             {USER_TYPES.map((type) => {
                 const color = USER_COLORS[type];
@@ -106,7 +128,7 @@ export default function Backstage() {
                             borderRadius: 14,
                             px: 2.2,
                             py: 3,
-                            m: 0,
+                            mt: 10,
                             transition: 'box-shadow 0.3s'
                         }}
                     >

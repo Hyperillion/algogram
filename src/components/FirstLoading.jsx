@@ -1,10 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
 const targetWords = [
-    'This_is',
-    'the_social_media',
-    "that_algorithms",
-    "has_your_fully_controlled",
     "welcome_to",
     "algogram"
 ];
