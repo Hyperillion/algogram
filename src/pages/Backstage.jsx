@@ -249,7 +249,7 @@ export default function Backstage() {
                                         wordBreak: 'break-word'
                                     }}
                                 >
-                                    {user.selfDescription}
+                                    "{user.selfDescription}"
                                 </Typography>
                             </Tooltip>
                         )}
