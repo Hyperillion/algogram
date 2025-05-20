@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Box, Typography, Button } from "@mui/material";
-import GlitchLoading from "../components/GlitchLoading";
+import FirstLoading from "../components/FirstLoading";
 
 const CHARACTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-=[]{}|;:',.<>/?";
 const FONT_SIZE = 20;
@@ -126,7 +126,7 @@ export default function Landing() {
         setTimeout(() => {
             setLoading(false);
             navigate("/login");
-        }, 4000);
+        }, 18500);
     };
 
     const pulseStyle = {
@@ -239,7 +239,7 @@ export default function Landing() {
                         textTransform: "none",
                     }}
                 >
-                    and mostly people treat that story as reality.
+                    and mostly people treat their story as reality.
                 </Typography>
             </Box>
 
@@ -261,7 +261,7 @@ export default function Landing() {
                 </Button>
 
             </Box>
-            {loading && <GlitchLoading />}
+            {loading && <FirstLoading />}
         </Box>
     );
 }
