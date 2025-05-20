@@ -60,9 +60,9 @@ export default function Backstage() {
     return (
         <Box
             sx={{
-                width: '95vw',
-                height: '95vh',
-                minHeight: '95vh',
+                width: '100vw',
+                height: '100vh',
+                minHeight: '100vh',
                 bgcolor: 'background.default',
                 display: 'flex',
                 flexDirection: 'row',
