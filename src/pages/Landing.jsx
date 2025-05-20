@@ -252,7 +252,20 @@ export default function Landing() {
                         textTransform: "none",
                     }}
                 >
-                    Welcome to the world ruled by algorithm
+                    Welcome to Algogram.
+                </Typography>
+                <Typography
+                    variant="body1"
+                    sx={{
+                        color: "#fff",
+                        mb: 3,
+                        fontFamily: "monospace",
+                        fontSize: 18,
+                        letterSpacing: "0.04em",
+                        textTransform: "none",
+                    }}
+                >
+                    Welcome to the next generation of social media. Where algorithm will choose what you post and what you see.
                 </Typography>
             </Box>
 
